@@ -1,0 +1,16 @@
+/**
+ * Notes list (used for documentation on homepage)
+ */
+
+.notes {
+  .notes__title {
+    @include pixel-rem(18);
+  }
+  .note {
+    margin: 0.1em 0 0.4em;
+    padding: 2px 5px;
+    &:nth-child(even) {
+      background: get-color("lightgray");
+    }
+  }
+}

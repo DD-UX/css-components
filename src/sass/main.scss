@@ -1,0 +1,47 @@
+/**
+ * This is the main application stylesheet.
+ * To avoid inheritance issues Sass is organized by file types:
+ * - functions: methods to shortcut some Sass assets (ex: get some specific color from the $color_list map)
+ * - mixins: code assets
+ * - shared-components: helpers developed to not redo the Wheel
+ * - app-files: get the Sass from each view/section developed
+ *
+ * IMPORTANT: Make sure all the `*.scss` files have underscore to partial them (otherwise Sass will create a CSS file for each without)
+ */
+
+/**
+ * Functions:
+ */
+@import '_compiled-files/_functions';
+
+/**
+ * Mixins:
+ */
+@import '_compiled-files/_mixins';
+
+/**
+ * This is our main variables file. We must include it last so we can overwrite any variable
+ * definitions in our imported stylesheets.
+ */
+@import '_variables';
+
+/**
+* Bootstrap Sass
+*/
+@import '_bootstrap-variables';
+@import '../../vendor/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+
+/**
+ * General styles
+ */
+@import '_general-styles';
+
+/**
+ * Shared components
+ */
+@import '_compiled-files/_shared-components';
+
+/**
+ * App files (views/sections)
+ */
+@import "_compiled-files/_app-files";

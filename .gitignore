@@ -1,0 +1,11 @@
+*.sw*
+*~
+build/
+bin/
+static/
+node_modules/
+vendor/
+.idea
+src/sass/_compiled-files
+src/sass/main.css
+src/sass/main.css.map

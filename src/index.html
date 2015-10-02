@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html ng-controller="AppController">
+
+<head>
+    <title ng-bind="pageTitle">CSS components</title>
+
+    <!-- social media tags -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@KunaiConsulting">
+    <meta name="twitter:title" content="CSS components">
+    <meta name="twitter:description" content="CSS components">
+    <meta name="twitter:creator" content="@KunaiConsulting">
+    <meta name="twitter:image:src" content="https://a248.e.akamai.net/assets.github.com/images/modules/logos_page/Octocat.png?1366128846">
+    <meta property="og:title" content="CSS components">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://github.com/dd-kunai/css-components">
+    <meta property="og:image" content="https://a248.e.akamai.net/assets.github.com/images/modules/logos_page/Octocat.png?1366128846">
+    <meta property="og:description" content="CSS components">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, min-scale=1, max-scale=1, user-scalable=no">
+
+    <!-- font awesome from BootstrapCDN -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- compiled Favicons (src/assets/images/favicon/favicon-raw-.png) -->
+    <% favicons.forEach( function ( file ) { %>
+        <link rel="icon" type="image/<%= file.ext %>" href="<%= file.name %>">
+        <% }); %>
+
+            <!-- compiled CSS -->
+            <% styles.forEach( function ( file ) { %>
+                <link rel="stylesheet" type="text/css" href="<%= file %>" />
+                <% }); %>
+
+</head>
+
+<body>
+    <!-- Container-fluid for spacing aside the main view -->
+    <div ng-cloak ui-view="main"></div>
+
+    <!-- compiled JavaScript -->
+    <% scripts.forEach( function ( file ) { %>
+        <script type="text/javascript" src="<%= file %>"></script>
+        <% }); %>
+
+            <!-- Typekit font pack -->
+            <script src="https://use.typekit.net/pmn3lbs.js"></script>
+            <script>
+                try {
+                    Typekit.load({
+                        async: true
+                    });
+                } catch (e) {}
+            </script>
+
+            <script type="text/javascript" src="http://localhost:35729/livereload.js"></script>
+</body>
+
+</html>

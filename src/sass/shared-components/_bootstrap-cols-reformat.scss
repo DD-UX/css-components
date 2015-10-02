@@ -1,0 +1,16 @@
+/**
+ * Get all column classes from bootstrap and give them a different approach
+ * so they will adapt the same size
+ */
+
+$sizes: 'xs', 'sm', 'md', 'lg';
+
+@for $i from 1 through 12 {
+  @each $val in $sizes {
+    .col-#{$val}-#{$i} {
+      vertical-align: top;
+      display: table-cell;
+      float: none !important;
+    }
+  }
+}
