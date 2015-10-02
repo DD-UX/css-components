@@ -5,7 +5,8 @@
 
 html, body {
   @include antialiasing;
-  overflow-x: hidden;
+  overflow: hidden;
+  height: 100%;
 }
 
 body {

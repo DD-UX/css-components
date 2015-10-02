@@ -78,9 +78,11 @@ module.exports = {
       'vendor/filament-sticky/fixedsticky.js',
       'vendor/skrollr/dist/skrollr.min.js',
       'vendor/angular-skrollr/dist/angular-skrollr.js',
+      'vendor/swiper/dist/js/swiper.js',
       'vendor/lodash/lodash.min.js'
     ],
     css: [
+      'vendor/swiper/dist/css/swiper.css',
       'vendor/filament-sticky/fixedsticky.css'
     ],
     assets: [

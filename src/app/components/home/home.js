@@ -52,7 +52,9 @@
    * @constructor
    */
   function HomeController($scope) {
-    $scope.home = 'Hello!';
+    $scope.swiper = '';
+
+
   }
 
 })(angular);

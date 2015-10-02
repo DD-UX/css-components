@@ -1,3 +1,177 @@
-<section class="page page--home container-fluid">
+<section class="page--home">
+
+    <div swiper-slider class="full-size-slider swiper-container" parameters="{
+                'direction': 'vertical',
+                'pagination': '.swiper-pagination',
+                'paginationClickable': true,
+                'mousewheelForceToAxis': true,
+                'mousewheelControl': true,
+                'keyboardControl': true
+            }">
+        <div class="swiper-wrapper">
+
+            <article class="swiper-slide">
+                <div class="vertical-aligner">
+                    <div class="vertical-aligned">
+                        <h2 class="main__title">CSS Components and Good Practices</h2>
+                        <hr>
+                        <p class="third__title">When coding becomes assembling</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="swiper-slide">
+                <div class="vertical-aligner">
+                    <div class="vertical-aligned">
+                        <h2 class="main__title text-center">Glossary</h2>
+                        <hr>
+                        <dl class="notes">
+                            <dt class="third__title">CSS Components</dt>
+                            <dd class="note">
+                                <b>Introduction:</b>
+                                Design vs Semantic: how to keep them together without messing each-other
+                            </dd>
+                            <dd class="note">
+                                Sass variables
+                            </dd>
+                            <dd class="note">
+                                Helpers for generic tasks (DRY)
+                            </dd>
+                            <dd class="note">
+                                Massive refactor using <code>@each</code>. Bootstrap's grid in a few lines
+                            </dd>
+                            <dd class="note">
+                                <b>Bonus track:</b>
+                                The imposible becomes possible: vertical alignment for static elements
+                            </dd>
+                        </dl>
+                        <dl class="notes">
+                            <dt class="third__title">Good Practices</dt>
+                            <dd class="note">
+                                Images as <code>&lt;img&gt;</code> only when is required
+                            </dd>
+                            <dd class="note">
+                                Pseudo elements <code>:before</code> and <code>:after</code>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </article>
+            <article class="swiper-slide">
+                <div class="vertical-aligner">
+                    <div class="vertical-aligned">
+                        <h2 class="secondary__title text-center">Design vs Semantic: how to keep them together without messing
+                            each-other</h2>
+                        <hr>
+                        <h3 class="third__title">Common issues</h3>
+                        <ul>
+                            <li>
+                                <b>Bind styles to tag selectors</b><br>
+                                <code>body section article h2 {...}</code>
+                            </li>
+                            <li>
+                                <b>Use some tags because how they look instead of what they mean</b><br>
+                                <code>&lt;h1&gt;Main Article title&lt;/h1&gt;</code> instead of
+                                <code>&lt;h2 class="main__title"&gt;Main Article title&lt;/h2&gt;</code>
+                            </li>
+                            <li>
+                                <b>Apply the same styles to different selectors over and over</b><br>
+                                <code>nav li a {cursor: pointer;}</code> and some lines after <code>aside li a
+                                {cursor: pointer;}</code>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </article>
+            <article class="swiper-slide">
+                <div class="vertical-aligner">
+                    <div class="vertical-aligned">
+                        <h2 class="secondary__title text-center">Design vs Semantic: how to keep them together without messing
+                            each-other</h2>
+                        <hr>
+                        <h3 class="third__title">A single and practical solution</h3>
+
+                        <p>
+                            Think <span class="label label-info">Semantic</span> (<b>markup</b>) and <span
+                                class="label label-primary">Design</span> (<b>CSS</b>)
+                            apart. You'll find out your HTML will be more accurate in meaning and create components
+                            in CSS to use over and over regardless which element you target.
+                        </p>
+
+                    </div>
+                </div>
+            </article>
+            <article class="swiper-slide">
+                <div class="vertical-aligner">
+                    <div class="vertical-aligned">
+                        <h2 class="secondary__title text-center">Sass variables</h2>
+                        <hr>
+                        <a href="http://codepen.io/Kunai-01/pen/LpWWRx?editors=110" target="_blank">
+                            <h3 class="third__title">
+                                How to make them count
+                            </h3>
+                        </a>
+                        <ul>
+                            <li>Mapping the project's colours</li>
+                            <li>Default font size</li>
+                            <li>Image folder routing</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </article>
+            <article class="swiper-slide">
+                <div class="vertical-aligner">
+                    <div class="vertical-aligned">
+                        <h2 class="secondary__title text-center">Helpers for generic tasks</h2>
+                        <hr>
+                        <a href="http://codepen.io/Kunai-01/pen/GpWWLw?editors=010" target="_blank">
+                            <h3 class="third__title">Classes</h3>
+                        </a>
+                        <ul>
+                            <li><code>.transition</code></li>
+                            <li><code>.clickable</code></li>
+                            <li>
+                                Headings: <code>.main__title</code>,
+                                <code>.secondary__title</code>,
+                                <code>.third__title</code>
+                            </li>
+                            <li>
+                                Retina display:
+                                <code>.retina--visible</code> and
+                                <code>.retina--hidden</code>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </article>
+            <article class="swiper-slide">
+                <div class="vertical-aligner">
+                    <div class="vertical-aligned">
+                        <h2 class="secondary__title text-center">Helpers for generic tasks</h2>
+                        <hr>
+                        <h3 class="third__title">Mixins</h3>
+                        <ul>
+                            <li><code>HIDPI</code></li>
+                            <li><code>antialiasing</code></li>
+                            <li><code>pixel-rem</code></li>
+                            <li><code>text-ellipsis</code></li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article class="swiper-slide">
+                <div class="vertical-aligner">
+                    <div class="vertical-aligned">
+
+
+                    </div>
+                </div>
+            </article>
+        </div>
+        <menu class="swiper-pagination"></menu>
+    </div>
 
 </section>
