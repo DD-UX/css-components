@@ -7,8 +7,30 @@
   .full-size-slider,
   .swiper-slide {
     height: 100%!important;
+    
     .vertical-aligned {
       padding: 0 4.4em;
+    }
+
+    .avatar {
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+      width: 200px;
+      height: 200px;
+      background: url(#{$img-route}tech-talk/dd.jpeg) no-repeat center center;
+      background-size: cover;
+      border-radius: 5px;
+      &:after {
+        content: attr(title);
+        display: block;
+        position: absolute;
+        left: 20px;
+        top: 65%;
+        @include pixel-rem(30);
+        font-family: $font-family-serif;
+        color: get_color('green');
+      }
     }
   }
 }
