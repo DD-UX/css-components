@@ -12,6 +12,17 @@
       padding: 0 4.4em;
     }
 
+    .opacitizer {
+      opacity: 0;
+    }
+    &.swiper-slide-active {
+      .opacitizer {
+        opacity: 1;
+        transition-delay: 400ms;
+        transition-duration: 400ms;
+      }
+    }
+
     .avatar {
       position: absolute;
       right: 10px;
