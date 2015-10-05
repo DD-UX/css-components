@@ -9,14 +9,12 @@
     .directive('swiperSlider', SwiperSlider);
 
 
-  //Injections for customFileField
-  SwiperSlider.$inject = ['$timeout'];
   /**
    * @param $timeout
    * @returns {{scope: {parameters: Object}}
    * @constructor
    */
-  function SwiperSlider($timeout) {
+  function SwiperSlider() {
     return {
       restrict: 'A',
       scope: {
@@ -27,12 +25,8 @@
         var uuid = createUUID(),
             swipers = [];
 
-        console.log(elem);
-
-        $timeout(function() {
           elem.addClass('class-' + uuid);
           swipers[uuid] = new window.Swiper('.class-' + uuid, scope.parameters);
-        });
 
       }
     };
