@@ -25,7 +25,7 @@
                         <dl class="notes">
                             <dt class="third__title">CSS Components</dt>
                             <dd class="note">
-                                <b>Introduction:</b> Design vs Semantic: how to keep them together without messing each-other
+                                <b>Introduction:</b> Design and Semantic: how to keep them together without messing each-other
                             </dd>
                             <dd class="note">
                                 Sass variables
@@ -100,18 +100,19 @@
             <article class="swiper-slide bg__lightblue">
                 <div class="vertical-aligner opacitizer transition">
                     <div class="vertical-aligned">
-                        <h2 class="secondary__title text-center">Design vs Semantic: how to keep them together without messing
+                        <h2 class="secondary__title text-center">Design and Semantic: how to keep them together without
+                            messing
                             each-other</h2>
                         <hr class="border__blue">
-                        <h3 class="third__title">Common issues</h3>
+                        <h3 class="third__title">In my experience these approaches lead us into issues:</h3>
                         <ul>
                             <li>
-                                <b>Bind styles to tag selectors</b>
+                                <b>Bind styles to tag selectors (chained or not)</b>
                                 <br>
                                 <code>body section article h2 {...}</code>
                             </li>
                             <li>
-                                <b>Use some tags because how they look instead of what they mean</b>
+                                <b>Using tags because how they look instead of what they mean</b>
                                 <br>
                                 <code>&lt;h1&gt;Main Article title&lt;/h1&gt;</code> instead of
                                 <code>&lt;h2 class="main__title"&gt;Main Article title&lt;/h2&gt;</code>
@@ -130,16 +131,19 @@
             <article class="swiper-slide bg__lightblue">
                 <div class="vertical-aligner opacitizer transition">
                     <div class="vertical-aligned">
-                        <h2 class="secondary__title text-center">Design vs Semantic: how to keep them together without messing
+                        <h2 class="secondary__title text-center">Design and Semantic: how to keep them together without messing
                             each-other</h2>
                         <hr class="border__blue">
-                        <h3 class="third__title">A single and practical solution</h3>
-
-                        <p>
-                            Think <span class="label label-info">Semantic</span> (<b>markup</b>) and <span class="label label-primary">Design</span>                            (<b>CSS</b>) apart. You'll find out your HTML will be more accurate in meaning and create components
-                            in CSS to use over and over regardless which element you target.
-                        </p>
-
+                        <h3 class="third__title">How to feel you don't have to choose in between Design and
+                            Semantic, without writing yourself over and over:</h3>
+                        <ul>
+                            <li>Choose the markup for its meaning and not for how it looks by default</li>
+                            <li>Create CSS components (if possible helped by some compiler) to standarize the
+                                team's code</li>
+                            <li>Make those components with: variables, classes, mixins and some other ways to
+                                modularize code that might help you based on your experiences</li>
+                            <li>Have fun creating them, is the best way to get more and more creative</li>
+                        </ul>
                     </div>
                 </div>
             </article>
@@ -148,9 +152,71 @@
                     <div class="vertical-aligned">
                         <h2 class="secondary__title text-center">Sass variables</h2>
                         <hr class="border__green">
+                        <h3 class="third__title">
+                            As in programming languages, CSS compilers can use variables to enhance the code
+                            before rendering.
+                        </h3>
+                    </div>
+                </div>
+            </article>
+
+            <article class="swiper-slide bg__lightgreen">
+                <div class="vertical-aligner opacitizer transition">
+                    <div class="vertical-aligned">
+                        <h2 class="secondary__title text-center">Sass variables</h2>
+                        <hr class="border__green">
+                        <h3 class="third__title">
+                            Project's colours
+                        </h3>
+                        <p>Despite how many of them or which, every project has colours.</p>
+                        <p>Every brand also has very well defined a specific value for each color.</p>
+                        <p>Caching those values helps the dev team to not think over and over about them (cleaner
+                            way of working).</p>
+                        <p>Also we could use a map to store them all into a single variable.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="swiper-slide bg__lightgreen">
+                <div class="vertical-aligner opacitizer transition">
+                    <div class="vertical-aligned">
+                        <h2 class="secondary__title text-center">Sass variables</h2>
+                        <hr class="border__green">
+                        <h3 class="third__title">
+                            Default font size
+                        </h3>
+                        <p>Standarize components, is not caching colours only. We can cache lot of different
+                            elements we use in the site-wide.</p>
+                        <p>The project's font size is one of those value we have to make sure persist properly.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="swiper-slide bg__lightgreen">
+                <div class="vertical-aligner opacitizer transition">
+                    <div class="vertical-aligned">
+                        <h2 class="secondary__title text-center">Sass variables</h2>
+                        <hr class="border__green">
+                        <h3 class="third__title">
+                            Img routing
+                        </h3>
+                        <p>One of those things give me headaches is to think where images are placed within the
+                            source code.</p>
+                        <p>To caching the route not only helps to focus on what is important, also give us the power
+                        to change the route if is required in the future. A good example is migrating the images
+                            into a CDN outside the build and probably into a different domain.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="swiper-slide bg__lightgreen">
+                <div class="vertical-aligner opacitizer transition">
+                    <div class="vertical-aligned">
+                        <h2 class="secondary__title text-center">Sass variables</h2>
+                        <hr class="border__green">
                         <a href="http://codepen.io/Kunai-01/pen/LpWWRx?editors=110" target="_blank">
                             <h3 class="third__title">
-                                How to make them count
+                                Bring them all together:
                             </h3>
                         </a>
                         <ul>
@@ -158,10 +224,10 @@
                             <li>Default font size</li>
                             <li>Image folder routing</li>
                         </ul>
-
                     </div>
                 </div>
             </article>
+
             <article class="swiper-slide">
                 <div class="vertical-aligner opacitizer transition">
                     <div class="vertical-aligned">
