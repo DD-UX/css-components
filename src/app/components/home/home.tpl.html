@@ -17,6 +17,10 @@
                 <div class="avatar" title="DD"></div>
             </article>
 
+            <!--    |||
+                    ||| Glossary
+                    ||| -->
+
             <article class="swiper-slide">
                 <div class="vertical-aligner opacitizer transition">
                     <div class="vertical-aligned">
@@ -31,10 +35,10 @@
                                 Sass variables
                             </dd>
                             <dd class="note">
-                                Helpers for generic tasks (DRY)
+                                DRY Helpers
                             </dd>
                             <dd class="note">
-                                Massive refactor using <code>@each</code>
+                                Massive coding with <code>@each</code> and <code>@for</code>
                                 <ul>
                                     <li>Ton of color selectors</li>
                                     <li>Reformatting bootstrap's grid</li>
@@ -57,6 +61,10 @@
                 </div>
             </article>
 
+            <!--    |||
+                    ||| CSS Components
+                    ||| -->
+
             <article class="swiper-slide bg__lightblue">
                 <div class="vertical-aligner opacitizer transition">
                     <div class="vertical-aligned">
@@ -64,6 +72,8 @@
                     </div>
                 </div>
             </article>
+
+            <!-- Introduction -->
 
             <article class="swiper-slide bg__lightblue">
                 <div class="vertical-aligner opacitizer transition">
@@ -97,12 +107,15 @@
                 </div>
             </article>
 
+            <!-- Design and Semantic -->
+
             <article class="swiper-slide bg__lightblue">
                 <div class="vertical-aligner opacitizer transition">
                     <div class="vertical-aligned">
                         <h2 class="secondary__title text-center">Design and Semantics: how to keep them together without
                             messing
                             each-other</h2>
+
                         <hr class="border__blue">
                         <h3 class="third__title">In my experience these approaches lead us into issues:</h3>
                         <ul>
@@ -128,6 +141,7 @@
                     </div>
                 </div>
             </article>
+
             <article class="swiper-slide bg__lightblue">
                 <div class="vertical-aligner opacitizer transition">
                     <div class="vertical-aligned">
@@ -146,6 +160,9 @@
                     </div>
                 </div>
             </article>
+
+            <!-- Sass Variables -->
+
             <article class="swiper-slide bg__lightgreen">
                 <div class="vertical-aligner opacitizer transition">
                     <div class="vertical-aligned">
@@ -185,6 +202,7 @@
                         </h3>
                         <p>Standarize components, is not caching colors only. We can cache lot of different elements we use
                             site-wide.</p>
+
                         <p>The project's font size is one of those value we have to make sure persist properly.</p>
                     </div>
                 </div>
@@ -225,19 +243,21 @@
                 </div>
             </article>
 
+            <!-- DRY Helpers -->
+
             <article class="swiper-slide bg__lightyellow">
                 <div class="vertical-aligner opacitizer transition">
                     <div class="vertical-aligned">
-                        <h2 class="secondary__title text-center">Helpers for generic tasks</h2>
+                        <h2 class="secondary__title text-center">DRY Helpers</h2>
                         <hr class="border__yellow">
                         <h3 class="third__title">For helper I mean a block of code which can be
                             used multiple times (passing or not arguments). Some pros:</h3>
                         <ul>
-                            <li>Keep all sort of modules in specific files and folders, so the whole team can access to them without
-                                re-doing what was already done</li>
-                            <li>Creative tools can be used many times to enhance general and specific User Experience
-                            </li>
-                            <li>Easier to adapt/modify some UI modularized before</li>
+                            <li>Keep all sort of modules in specific files and folders so the whole team can access without
+                                redo what was already done</li>
+                            <li>Creative tools can be used many times to enhance general and specific User Experience</li>
+                            <li>It's easier to adapt/modify some UX modularized than reformat a lot of different
+                                selectors</li>
                         </ul>
 
                     </div>
@@ -247,34 +267,39 @@
             <article class="swiper-slide bg__lightyellow">
                 <div class="vertical-aligner opacitizer transition">
                     <div class="vertical-aligned">
-                        <h2 class="secondary__title text-center">Helpers for generic tasks</h2>
+                        <h2 class="secondary__title text-center">DRY Helpers</h2>
                         <hr class="border__yellow">
                         <a href="http://codepen.io/Kunai-01/pen/GpWWLw?editors=010" target="_blank">
                             <h3 class="third__title">Classes Helpers</h3>
                         </a>
                         <ul>
-                            <li><code>.transition</code>: Add cool transitions to shifts</li>
-                            <li><code>.clickable</code>: Cursor pointer and avoid user selection. Very useful to make elements look
-                                like buttons despite they are not (overall web apps)</li>
+
+                            <li><code>.transition</code>: Add cool transitions to shifts. This simple CSS3 helper
+                                will add category to any link, button or whatever you want while change their states.</li>
+                            <li><code>.clickable</code>: Cursor pointer and avoid user selection. Very useful to make
+                                elements look like real links and buttons (good practice on web apps components)</li>
+
                             <li>
                                 Headings: <code>.main__title</code>,
                                 <code>.secondary__title</code>,
                                 <code>.third__title</code>: Stop choosing headings by the way they look instead of what they
-                                mean (SEO meanining)
+                                mean. Pick your tags by their meaning and design apart.
+
                             </li>
                             <li>
                                 <a href="http://codepen.io/Kunai-01/pen/OypmXK?editors=110" target="_blank">
                                     <code>.text-ellipsis</code>
                                 </a>: Now a days most of projects are fluid/responsive and some elements just don't fit in
-                                the viewport. One of the best solutions is cropping texts without linebreaks (overall headings
-                                in mobile apps)
+                                the viewport. One of the best solutions in block headings is cropping without
+                                linebreaks
+
                             </li>
                             <li>
                                 <a href="http://codepen.io/Kunai-01/pen/wKJdzv?editors=110" target="_blank">
                                     <code>.antialiasing</code>
                                 </a>: With different devices (displays), browsers and fonts, the antialiasing technique becomes
-                                a must at the moment to preserve the project's look and feel. This Class is a mix of different
-                                techniques for different browsers
+                                a must at the moment to preserve the project's look and feel. This class nest
+                                browser-specific techniques with a <code>text-shadow</code> hack for fallback
                             </li>
                             <li>
                                 Retina display:
@@ -291,15 +316,15 @@
             <article class="swiper-slide bg__lightyellow">
                 <div class="vertical-aligner opacitizer transition">
                     <div class="vertical-aligned">
-                        <h2 class="secondary__title text-center">Helpers for generic tasks</h2>
+                        <h2 class="secondary__title text-center">DRY Helpers</h2>
                         <hr class="border__yellow">
                         <h3 class="third__title">What is a mixin?</h3>
-                        <p>Mixins are Sass directives that allow us to create blocks of code passing or not arguments and also
-                            wrapping our code on itself.</p>
-                        <p>One of the great advantages is that we can also set default values for the arguments in case we don't
-                            want to pass anything.</p>
-                        <p>Another advantage is we can create a file for each mixin and troubleshoot easily.</p>
-                        <p>Let's create two very different Mixins next.</p>
+                        <p>Mixins are Sass directives that allow us to create blocks of code (with arguments or not)
+                            or wrapping our code within.</p>
+                        <p>One of the great advantages is we can also set default values for the arguments.</p>
+                        <p>Another advantage is we can create a file for each mixin and troubleshoot easily (thanks
+                            Sass).</p>
+                        <p>Let's create two different Mixins next.</p>
                     </div>
                 </div>
             </article>
@@ -307,9 +332,9 @@
             <article class="swiper-slide bg__lightyellow">
                 <div class="vertical-aligner opacitizer transition">
                     <div class="vertical-aligned">
-                        <h2 class="secondary__title text-center">Helpers for generic tasks</h2>
+                        <h2 class="secondary__title text-center">DRY Helpers</h2>
                         <hr class="border__yellow">
-                        <h3 class="third__title">Mixins Helpers</h3>
+                        <h3 class="third__title">HIDPI - Mixins Helpers</h3>
                         <p><b>Target styles depending on device pixel density:</b> with plain CSS we should code a very big
                             mediaquery that points to many different browser engines.</p>
                         <p>With mixins we can do it once and only include it whenever we want to.</p>
@@ -327,15 +352,15 @@
             <article class="swiper-slide bg__lightyellow">
                 <div class="vertical-aligner opacitizer transition">
                     <div class="vertical-aligned">
-                        <h2 class="secondary__title text-center">Helpers for generic tasks</h2>
+                        <h2 class="secondary__title text-center">DRY Helpers</h2>
                         <hr class="border__yellow">
-                        <h3 class="third__title">Mixins Helpers</h3>
+                        <h3 class="third__title">Pixel-rem - Mixins Helpers</h3>
                         <p><b>Migrating from px into rem units:</b></p>
                         <p>When we speak about pixels (unit) we should know is not equal to a physical pixel in the display.
-                            It is just a unit and will vary depending the font in use.</p>
-                        <p>Saying this, some devices can interpret "px" units different (for example Android).</p>
+                            It's just a unit and will vary depending the font in use.</p>
+                        <p>That said, some devices can interpret "px" units different (for example Android).</p>
                         <p>To overcome this issue we should use relative measures.</p>
-                        <p>"em" is one unit very often used on margins and paddings but for <code>font-size</code> is not that good
+                        <p>"em" is one unit very used on margins and paddings but for <code>font-size</code> is not that good
                             since its size depends on its immediate parent.</p>
                         <p>For font practices the best unit is "rem" with is the same but relative to the root.</p>
                         <p>We can handle <code>1rem</code> as <code>10px</code> if we bind font-size: 62.5%</code> into the
@@ -349,53 +374,52 @@
                 </div>
             </article>
 
-            <!--<article class="swiper-slide bg__lightyellow">-->
-            <!--<div class="vertical-aligner opacitizer transition">-->
-            <!--<div class="vertical-aligned">-->
-            <!--<h2 class="secondary__title text-center">Helpers for generic tasks</h2>-->
-            <!--<hr class="border__yellow">-->
-            <!--<h3 class="third__title">Mixins Helpers</h3>-->
-            <!--<ul>-->
-            <!--<li>-->
-            <!--<a href="http://codepen.io/Kunai-01/pen/RWpVRv?editors=110" target="_blank">-->
-            <!--HIDPI-->
-            <!--</a>:-->
-            <!--This Mixin wraps our code within different madiaqueries that test the device's pixel-->
-            <!--density (for different browsers). Also you can specify different densities to target-->
-            <!--very specific devices.-->
-            <!--</li>-->
-            <!--<li>-->
-            <!--<a href="http://codepen.io/Kunai-01/pen/bVqWeG?editors=110" target="_blank">-->
-            <!--pixel-rem-->
-            <!--</a>-->
-            <!--</li>-->
+            <!-- Massive coding with @each-->
 
-            <!--</ul>-->
-            <!--</div>-->
-            <!--</div>-->
-            <!--</article>-->
-
-            <article class="swiper-slide">
+            <article class="swiper-slide bg__lightred">
                 <div class="vertical-aligner opacitizer transition">
                     <div class="vertical-aligned">
-                        <h2 class="secondary__title text-center">Massive refactor using <b>@each</b></h2>
-                        <hr>
-                        <h3 class="third__title">Two robust examples</h3>
-                        <ul>
-                            <li>
-                                <a href="http://codepen.io/Kunai-01/pen/rOymZJ?editors=110" target="_blank">
-                                    Ton of color selectors
-                                </a>
-                            </li>
-                            <li>
-                                <a href="http://codepen.io/Kunai-01/pen/zvZwMa?editors=110" target="_blank">
-                                    Reformatting bootstrap's grid
-                                </a>
-                            </li>
-                        </ul>
+                        <h2 class="secondary__title text-center">Massive coding with @each and @for</h2>
+                        <hr class="border__red">
+                        <h3 class="third__title">@each:</h3>
+                        <p>Just like in different program languages, Sass give us tools to iterate arrays and
+                            objects to get values, allowing us to create a wide range of helpers with a few lines of code.</p>
+                        <p>As I've created manually classes for button-like elements or adding transitions, using
+                            <code>@each</code> and the previous color mapping I've also created a huge list of color
+                            helpers minding texts, backgrounds and borders.</p>
+                        <p>
+                            <a href="http://codepen.io/Kunai-01/pen/rOymZJ?editors=110" target="_blank">
+                                Ton of color helpers
+                            </a>
+                        </p>
                     </div>
                 </div>
             </article>
+
+            <article class="swiper-slide bg__lightred">
+                <div class="vertical-aligner opacitizer transition">
+                    <div class="vertical-aligned">
+                        <h2 class="secondary__title text-center">Massive coding with @each and @for</h2>
+                        <hr class="border__red">
+                        <h3 class="third__title">@for</h3>
+                        <p>We've seen <code>@each</code> iterates countless items.</p>
+                        <p>But if we want to create a limited loop and also access to the index, <code>@for</code>
+                            might be a better choice.
+                        </p>
+                        <p>For the next example I've decided to reformat completely the Bootstrap's 3 grid in ten
+                            (10) lines of code only.</p>
+                        <p>Thanks to the new code, all columns in our project will keep the same height as happen
+                            with table cells.</p>
+                        <p>
+                            <a href="http://codepen.io/Kunai-01/pen/zvZwMa?editors=110" target="_blank">
+                                Reformatting bootstrap's grid
+                            </a>
+                        </p>
+
+                    </div>
+                </div>
+            </article>
+
             <article class="swiper-slide">
                 <div class="vertical-aligner opacitizer transition">
                     <div class="vertical-aligned">
@@ -429,6 +453,7 @@
                     </div>
                 </div>
             </article>
+
             <article class="swiper-slide">
                 <div class="vertical-aligner opacitizer transition">
                     <div class="vertical-aligned">
@@ -438,6 +463,7 @@
                     </div>
                 </div>
             </article>
+
             <article class="swiper-slide">
                 <div class="vertical-aligner opacitizer transition">
                     <div class="vertical-aligned">
@@ -458,7 +484,9 @@
                 </div>
             </article>
 
-
+            <!--    |||
+                    ||| Good Practices
+                    ||| -->
 
             <!-- Good Practices -->
             <article class="swiper-slide">
