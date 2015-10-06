@@ -29,7 +29,7 @@
                         <dl class="notes">
                             <dt class="third__title">CSS Components</dt>
                             <dd class="note">
-                                <b>Introduction:</b> Design and Semantic: how to keep them together without messing each-other
+                                <b>Introduction:</b> Design and Semantics: how to keep them together without messing each-other
                             </dd>
                             <dd class="note">
                                 Sass variables
@@ -45,7 +45,7 @@
                                 </ul>
                             </dd>
                             <dd class="note">
-                                <b>Bonus track:</b> The imposible becomes possible: vertical alignment for static elements
+                                <b>Bonus track:</b> The impossible becomes possible: vertical alignment for static elements
                             </dd>
                         </dl>
                         <dl class="notes">
@@ -88,7 +88,7 @@
                             ...
                         </h2>
                         <hr class="border__blue">
-                        <h3 class="third__title text-right">... it happened to me plenty of times</h3>
+                        <h3 class="third__title text-right">... it has happened to me plenty of times</h3>
                     </div>
                 </div>
             </article>
@@ -97,11 +97,11 @@
                 <div class="vertical-aligner opacitizer transition">
                     <div class="vertical-aligned">
                         <h2 class="secondary__title text-center">
-                            Thanks to CSS compilers like Sass or Less we can arrange the code in different files and
+                            Thanks to CSS compilers like Sass or Less, we can arrange the code in different files and
                             folders.
                         </h2>
                         <hr class="border__blue">
-                        <h3 class="third__title text-right">Although it won't help us if we can't create a
+                        <h3 class="third__title text-right">Although, it won't help us if we can't create a
                             thoughtful structure for our code.</h3>
                     </div>
                 </div>
@@ -112,8 +112,10 @@
             <article class="swiper-slide bg__lightblue">
                 <div class="vertical-aligner opacitizer transition">
                     <div class="vertical-aligned">
-                        <h2 class="secondary__title text-center">Design and Semantic: how to keep them together without
-                            messing each-other</h2>
+                        <h2 class="secondary__title text-center">Design and Semantics: how to keep them together without
+                            messing
+                            each-other</h2>
+
                         <hr class="border__blue">
                         <h3 class="third__title">In my experience these approaches lead us into issues:</h3>
                         <ul>
@@ -131,7 +133,7 @@
                             <li>
                                 <b>Apply the same styles to different selectors over and over</b>
                                 <br>
-                                <code>nav li a {cursor: pointer;}</code> and some lines after <code>aside li a
+                                <code>nav li a {cursor: pointer;}</code> and after some lines <code>aside li a
                                 {cursor: pointer;}</code>
                             </li>
                         </ul>
@@ -143,11 +145,11 @@
             <article class="swiper-slide bg__lightblue">
                 <div class="vertical-aligner opacitizer transition">
                     <div class="vertical-aligned">
-                        <h2 class="secondary__title text-center">Design and Semantic: how to keep them together without messing
+                        <h2 class="secondary__title text-center">Design and Semantics: how to keep them together without messing
                             each-other</h2>
                         <hr class="border__blue">
                         <h3 class="third__title">How to feel you don't have to choose in between Design and
-                            Semantic, without writing yourself over and over:</h3>
+                            Semantics, without writing yourself over and over:</h3>
                         <ul>
                             <li>Choose the markup for its meaning and not for how it looks by default</li>
                             <li>Create CSS components (if possible helped by some compiler) to standarize the team's code</li>
@@ -180,9 +182,9 @@
                         <h2 class="secondary__title text-center">Sass variables</h2>
                         <hr class="border__green">
                         <h3 class="third__title">
-                            Project's colours
+                            Project's colors
                         </h3>
-                        <p>Despite how many of them or which, every project has colours.</p>
+                        <p>Despite how many of them or which, every project has colors.</p>
                         <p>Every brand also has very well defined a specific value for each color.</p>
                         <p>Caching those values helps the dev team to not think over and over about them (cleaner way of working).</p>
                         <p>Also we could use a map to store them all into a single variable.</p>
@@ -198,8 +200,9 @@
                         <h3 class="third__title">
                             Default font size
                         </h3>
-                        <p>Standarize components, is not caching colours only. We can cache lot of different elements we use
-                            in the site-wide.</p>
+                        <p>Standarize components, is not caching colors only. We can cache lot of different elements we use
+                            site-wide.</p>
+
                         <p>The project's font size is one of those value we have to make sure persist properly.</p>
                     </div>
                 </div>
@@ -214,8 +217,8 @@
                             Img routing
                         </h3>
                         <p>One of those things give me headaches is to think where images are placed within the source code.</p>
-                        <p>To caching the route not only helps to focus on what is important, also give us the power to change
-                            the route if is required in the future. A good example is migrating the images into a CDN outside
+                        <p>To cache the route not only helps to focus on what is important, but also give us the power to change
+                            the route, if required in the future. A good example is migrating the images into a CDN outside
                             the build and probably into a different domain.</p>
                     </div>
                 </div>
@@ -232,7 +235,7 @@
                             </h3>
                         </a>
                         <ul>
-                            <li>Project's colours</li>
+                            <li>Project's colors</li>
                             <li>Default font size</li>
                             <li>Image folder routing</li>
                         </ul>
@@ -252,7 +255,7 @@
                         <ul>
                             <li>Keep all sort of modules in specific files and folders so the whole team can access without
                                 redo what was already done</li>
-                            <li>Creative tools to be used many times to enhance general and specific User Experience</li>
+                            <li>Creative tools can be used many times to enhance general and specific User Experience</li>
                             <li>It's easier to adapt/modify some UX modularized than reformat a lot of different
                                 selectors</li>
                         </ul>
@@ -270,15 +273,18 @@
                             <h3 class="third__title">Classes Helpers</h3>
                         </a>
                         <ul>
+
                             <li><code>.transition</code>: Add cool transitions to shifts. This simple CSS3 helper
                                 will add category to any link, button or whatever you want while change their states.</li>
                             <li><code>.clickable</code>: Cursor pointer and avoid user selection. Very useful to make
                                 elements look like real links and buttons (good practice on web apps components)</li>
+
                             <li>
                                 Headings: <code>.main__title</code>,
                                 <code>.secondary__title</code>,
                                 <code>.third__title</code>: Stop choosing headings by the way they look instead of what they
                                 mean. Pick your tags by their meaning and design apart.
+
                             </li>
                             <li>
                                 <a href="http://codepen.io/Kunai-01/pen/OypmXK?editors=110" target="_blank">
@@ -286,6 +292,7 @@
                                 </a>: Now a days most of projects are fluid/responsive and some elements just don't fit in
                                 the viewport. One of the best solutions in block headings is cropping without
                                 linebreaks
+
                             </li>
                             <li>
                                 <a href="http://codepen.io/Kunai-01/pen/wKJdzv?editors=110" target="_blank">
@@ -350,8 +357,8 @@
                         <h3 class="third__title">Pixel-rem - Mixins Helpers</h3>
                         <p><b>Migrating from px into rem units:</b></p>
                         <p>When we speak about pixels (unit) we should know is not equal to a physical pixel in the display.
-                            Is just a unit and will var depending the font in use.</p>
-                        <p>Saying this, some devices can interpret "px" units different (for example Android).</p>
+                            It's just a unit and will vary depending the font in use.</p>
+                        <p>That said, some devices can interpret "px" units different (for example Android).</p>
                         <p>To overcome this issue we should use relative measures.</p>
                         <p>"em" is one unit very used on margins and paddings but for <code>font-size</code> is not that good
                             since its size depends on its immediate parent.</p>
@@ -361,7 +368,7 @@
                         <p>
                             <a href="http://codepen.io/Kunai-01/pen/bVqWeG?editors=110" target="_blank">
                                 <code>pixel-rem</code>
-                            </a> mixin help us to handle the "rem" units and also provide a "px" fallback for older browsers.
+                            </a> mixin helps us to handle the "rem" units and also provide a "px" fallback for older browsers.
                         </p>
                     </div>
                 </div>
@@ -417,12 +424,12 @@
                 <div class="vertical-aligner opacitizer transition">
                     <div class="vertical-aligned">
                         <h2 class="secondary__title text-center">
-                            The imposible becomes possible: vertical alignment for static elements
+                            The impossible becomes possible: vertical alignment for static elements
                             <small>bonus track</small>
                         </h2>
                         <hr>
                         <h3 class="third__title">
-                            Since eons the humanity tried to overcome one of the most known issues in CSS, the
+                            Since eons the humanity has tried to overcome one of the most known issues in CSS, the
                             vertical alignment.
                         </h3>
                         <p>There are many practices we are going to check together:</p>
@@ -461,7 +468,7 @@
                 <div class="vertical-aligner opacitizer transition">
                     <div class="vertical-aligned">
                         <h2 class="secondary__title text-center">
-                            The imposible becomes possible: vertical alignment for static elements
+                            The impossible becomes possible: vertical alignment for static elements
                             <small>bonus track</small>
                         </h2>
                         <hr>
@@ -493,7 +500,7 @@
             <article class="swiper-slide">
                 <div class="vertical-aligner opacitizer transition">
                     <div class="vertical-aligned">
-                        <h2 class="secondary__title text-center">Images as &lt;img&gt; only when is required</h2>
+                        <h2 class="secondary__title text-center">Images as &lt;img&gt; only when required</h2>
                         <hr>
                         <h3 class="third__title">The proper way to set assets, pictures and pictures with captions</h3>
                         <p>
