@@ -23,10 +23,10 @@
       link: function(scope, elem) {
 
         var uuid = createUUID(),
-            swipers = [];
+          swipers = [];
 
-          elem.addClass('class-' + uuid);
-          swipers[uuid] = new window.Swiper('.class-' + uuid, scope.parameters);
+        elem.addClass('class-' + uuid);
+        swipers[uuid] = new window.Swiper('.class-' + uuid, scope.parameters);
 
       }
     };
