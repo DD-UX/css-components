@@ -41,7 +41,7 @@
         content: attr(title);
         display: block;
         position: absolute;
-        left: 20px;
+        right: 140px;
         top: 65%;
         @include pixel-rem(30);
         font-family: $font-family-serif;
