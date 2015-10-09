@@ -3,14 +3,14 @@
  * so they will adapt the same size
  */
 
-$sizes: 'xs', 'sm', 'md', 'lg';
-
-@for $i from 1 through 12 {
-  @each $val in $sizes {
-    .col-#{$val}-#{$i} {
-      vertical-align: top;
-      display: table-cell;
-      float: none !important;
-    }
-  }
-}
+//$sizes: 'xs', 'sm', 'md', 'lg';
+//
+//@for $i from 1 through 12 {
+//  @each $val in $sizes {
+//    .col-#{$val}-#{$i} {
+//      vertical-align: top;
+//      display: table-cell;
+//      float: none !important;
+//    }
+//  }
+//}
