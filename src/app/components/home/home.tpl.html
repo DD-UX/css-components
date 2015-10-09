@@ -9,14 +9,14 @@
             <article class="swiper-slide">
                 <div class="vertical-aligner opacitizer transition">
                     <div class="vertical-aligned">
-                        <div class="col-xs-6">
+                        <div class="col-xs-8 valign-middle">
                             <h2 class="main__title">CSS Components and Good Practices</h2>
                             <hr>
                             <p class="third__title">When coding becomes assembling</p>
                         </div>
-                        <div class="col-xs-6">
+                        <div class="col-xs-4 valign-middle">
                             <img class="img-responsive"
-                                    src="https://lh4.ggpht.com/uAVWC5KAFitSqKYLt_KdZXjVG9fO6Kue_wDn3nAo22U7KQdd9zGNdcziPw-pzPh7LSxLTpYNvELSZJmtqRAQANr5cSg?.gif"
+                                 src="https://s-media-cache-ak0.pinimg.com/originals/05/fe/e9/05fee97972bb7224e756946274d275c2.jpg"
                                  alt="css">
                         </div>
                     </div>
@@ -35,7 +35,8 @@
                         <dl class="notes">
                             <dt class="third__title">CSS Components</dt>
                             <dd class="note">
-                                <b>Introduction:</b> Design and Semantics: how to keep them together without messing each-other
+                                <b>Introduction:</b> Design and Semantics: how to keep them together without messing
+                                each-other
                             </dd>
                             <dd class="note">
                                 Sass variables
@@ -51,7 +52,8 @@
                                 </ul>
                             </dd>
                             <dd class="note">
-                                <b>Bonus track:</b> The impossible becomes possible: vertical alignment for static elements
+                                <b>Bonus track:</b> The impossible becomes possible: vertical alignment for static
+                                elements
                             </dd>
                         </dl>
                         <dl class="notes">
@@ -87,9 +89,9 @@
                         <h2 class="third__title text-center text__darkgray">
                             Have you ever started a project saying
                             <strong class="main__title text__black">
-                                "Not this time... this time the CSS will be very well structured"
+                                "I swear to old gods and the new this time CSS will be well structured"
                             </strong>
-                            and a week after it became a
+                            <br>and a week after it became a
                             <strong class="main__title text__black">big mess?</strong>
                             ...
                         </h2>
@@ -123,6 +125,22 @@
                             each-other</h2>
 
                         <hr class="border__blue">
+                        <p>Anytime we start to layout a project we see some design, analize it a little, write some
+                            markup and bind some CSS to it.</p>
+                        <p>At first, it is good. But then design changes (hopefuly not too much), the project grows
+                            and time after we start writing CSS and markup patches anywhere.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="swiper-slide bg__lightblue">
+                <div class="vertical-aligner opacitizer transition">
+                    <div class="vertical-aligned">
+                        <h2 class="secondary__title text-center">Design and Semantics: how to keep them together without
+                            messing
+                            each-other</h2>
+
+                        <hr class="border__blue">
                         <h3 class="third__title">In my experience these approaches lead us into issues:</h3>
                         <ul>
                             <li>
@@ -131,16 +149,19 @@
                                 <code>body section article h2 {...}</code>
                             </li>
                             <li>
+                                <b>Apply the same styles to different selectors over and over</b>
+                                <br>
+                                <code>.navbar li {cursor: pointer;}</code> and after some lines <code>.sidebar li
+                                {cursor: pointer;}</code>
+                            </li>
+                            <li>
                                 <b>Using tags because how they look instead of what they mean</b>
                                 <br>
                                 <code>&lt;h1&gt;Main Article title&lt;/h1&gt;</code> because is bigger than
                                 <code>&lt;h2&gt;</code>
                             </li>
                             <li>
-                                <b>Apply the same styles to different selectors over and over</b>
-                                <br>
-                                <code>.navbar li {cursor: pointer;}</code> and after some lines <code>.sidebar li
-                                {cursor: pointer;}</code>
+                                <b>Don't take long time to analize the design and plan its coding</b>
                             </li>
                         </ul>
 
@@ -148,19 +169,33 @@
                 </div>
             </article>
 
+            <article class="swiper-slide bg__lightblue text-center">
+                <div class="vertical-aligner opacitizer transition">
+                    <div class="vertical-aligned">
+                        <h2 class="main__title">Don't panic</h2>
+                        <img src="http://media2.giphy.com/media/GzbncVC7i5U4g/giphy.gif" alt="">
+                    </div>
+                </div>
+            </article>
+
             <article class="swiper-slide bg__lightblue">
                 <div class="vertical-aligner opacitizer transition">
                     <div class="vertical-aligned">
-                        <h2 class="secondary__title text-center">Design and Semantics: how to keep them together without messing
+                        <h2 class="secondary__title text-center">Design and Semantics: how to keep them together without
+                            messing
                             each-other</h2>
                         <hr class="border__blue">
                         <h3 class="third__title">How to feel you don't have to choose in between Design and
                             Semantics, without writing yourself over and over:</h3>
                         <ul>
                             <li>Choose the markup for its meaning and not for how it looks by default</li>
-                            <li>Create CSS components (if possible helped by some compiler) to standarize the team's code</li>
-                            <li>Make those components with: variables, classes, mixins and some other ways to modularize code
-                                that might help you based on your experiences</li>
+                            <li>Create CSS components (if possible helped by some compiler) to standarize the team's
+                                code
+                            </li>
+                            <li>Make those components with: variables, classes, mixins and some other ways to modularize
+                                code
+                                that might help you based on your experiences
+                            </li>
                             <li>Have fun creating them, is the best way to get more and more creative</li>
                         </ul>
                     </div>
@@ -190,9 +225,14 @@
                         <h3 class="third__title">
                             Project's colors
                         </h3>
+
                         <p>Despite how many of them or which, every project has colors.</p>
+
                         <p>Every brand also has very well defined a specific value for each color.</p>
-                        <p>Caching those values helps the dev team to not think over and over about them (cleaner way of working).</p>
+
+                        <p>Caching those values helps the dev team to not think over and over about them (cleaner way of
+                            working).</p>
+
                         <p>Also we could use a map to store them all into a single variable.</p>
                     </div>
                 </div>
@@ -206,7 +246,9 @@
                         <h3 class="third__title">
                             Default font size
                         </h3>
-                        <p>Standarize components, is not caching colors only. We can cache lot of different elements we use
+
+                        <p>Standarize components, is not caching colors only. We can cache lot of different elements we
+                            use
                             site-wide.
                         </p>
 
@@ -223,9 +265,14 @@
                         <h3 class="third__title">
                             Img routing
                         </h3>
-                        <p>One of those things give me headaches is to think where images are placed within the source code.</p>
-                        <p>To cache the route not only helps to focus on what is important, but also give us the power to change
-                            the route, if required in the future. A good example is migrating the images into a CDN outside
+
+                        <p>One of those things give me headaches is to think where images are placed within the source
+                            code.</p>
+
+                        <p>To cache the route not only helps to focus on what is important, but also give us the power
+                            to change
+                            the route, if required in the future. A good example is migrating the images into a CDN
+                            outside
                             the build and probably into a different domain.</p>
                     </div>
                 </div>
@@ -260,10 +307,14 @@
                         <h3 class="third__title">For helper I mean a block of code which can be
                             used multiple times (passing or not arguments). Some pros:</h3>
                         <ul>
-                            <li>Keep all sort of modules in specific files and folders so the whole team can access without redo
-                                what was already done</li>
-                            <li>Creative tools can be used many times to enhance general and specific User Experience</li>
-                            <li>It's easier to adapt/modify some UX modularized than reformat a lot of different selectors
+                            <li>Keep all sort of modules in specific files and folders so the whole team can access
+                                without redo
+                                what was already done
+                            </li>
+                            <li>Creative tools can be used many times to enhance general and specific User Experience
+                            </li>
+                            <li>It's easier to adapt/modify some UX modularized than reformat a lot of different
+                                selectors
                             </li>
                         </ul>
 
@@ -281,36 +332,45 @@
                         </a>
                         <ul>
 
-                            <li><code>.transition</code>: Add cool transitions to shifts. This simple CSS3 helper will add category
-                                to any link, button or whatever you want while change their states.</li>
-                            <li><code>.clickable</code>: Cursor pointer and avoid user selection. Very useful to make elements
-                                look like real links and buttons (good practice on web apps components)</li>
+                            <li><code>.transition</code>: Add cool transitions to shifts. This simple CSS3 helper will
+                                add category
+                                to any link, button or whatever you want while change their states.
+                            </li>
+                            <li><code>.clickable</code>: Cursor pointer and avoid user selection. Very useful to make
+                                elements
+                                look like real links and buttons (good practice on web apps components)
+                            </li>
 
                             <li>
                                 Headings: <code>.main__title</code>,
                                 <code>.secondary__title</code>,
-                                <code>.third__title</code>: Stop choosing headings by the way they look instead of what they
+                                <code>.third__title</code>: Stop choosing headings by the way they look instead of what
+                                they
                                 mean. Pick your tags by their meaning and design apart.
 
                             </li>
                             <li>
                                 <a href="http://codepen.io/Kunai-01/pen/OypmXK?editors=110" target="_blank">
                                     <code>.text-ellipsis</code>
-                                </a>: Now a days most of projects are fluid/responsive and some elements just don't fit in
+                                </a>: Now a days most of projects are fluid/responsive and some elements just don't fit
+                                in
                                 the viewport. One of the best solutions in block headings is cropping without linebreaks
 
                             </li>
                             <li>
                                 <a href="http://codepen.io/Kunai-01/pen/wKJdzv?editors=110" target="_blank">
                                     <code>.antialiasing</code>
-                                </a>: With different devices (displays), browsers and fonts, the antialiasing technique becomes
-                                a must at the moment to preserve the project's look and feel. This class nest browser-specific
+                                </a>: With different devices (displays), browsers and fonts, the antialiasing technique
+                                becomes
+                                a must at the moment to preserve the project's look and feel. This class nest
+                                browser-specific
                                 techniques with a <code>text-shadow</code> hack for fallback
                             </li>
                             <li>
                                 Retina display:
                                 <code>.retina--visible</code> and
-                                <code>.retina--hidden</code>: Display elements relying on DPI displays (to be included on
+                                <code>.retina--hidden</code>: Display elements relying on DPI displays (to be included
+                                on
                                 HIDPI Mixin)
                             </li>
                         </ul>
@@ -325,11 +385,17 @@
                         <h2 class="secondary__title text-center">DRY Helpers</h2>
                         <hr class="border__yellow">
                         <h3 class="third__title">What is a mixin?</h3>
-                        <p>Mixins are directives that allow us to create blocks of code (with arguments or not) or wrapping
+
+                        <p>Mixins are directives that allow us to create blocks of code (with arguments or not) or
+                            wrapping
                             our code within.</p>
+
                         <p>One of the great advantages is we can also set default values for the arguments.</p>
-                        <p>Another advantage is we can create a file for each mixin and troubleshoot easily (thanks Sass).
+
+                        <p>Another advantage is we can create a file for each mixin and troubleshoot easily (thanks
+                            Sass).
                         </p>
+
                         <p>Let's create two different Mixins next.</p>
                     </div>
                 </div>
@@ -341,14 +407,19 @@
                         <h2 class="secondary__title text-center">DRY Helpers</h2>
                         <hr class="border__yellow">
                         <h3 class="third__title">HIDPI - Mixins Helpers</h3>
-                        <p><b>Target styles depending on device pixel density:</b> with plain CSS we should code a very big
+
+                        <p><b>Target styles depending on device pixel density:</b> with plain CSS we should code a very
+                            big
                             mediaquery that points to many different browser engines.</p>
+
                         <p>With mixins we can do it once and only include it whenever we want to.</p>
+
                         <p>
                             <a href="http://codepen.io/Kunai-01/pen/RWpVRv?editors=110" target="_blank">
                                 HIDPI
                             </a>: This Mixin wraps our code within different madia queries that
-                            test the device's pixel density (for different browsers). Also you can specify different densities
+                            test the device's pixel density (for different browsers). Also you can specify different
+                            densities
                             to target very specific devices.
                         </p>
                     </div>
@@ -361,20 +432,32 @@
                         <h2 class="secondary__title text-center">DRY Helpers</h2>
                         <hr class="border__yellow">
                         <h3 class="third__title">Pixel-rem - Mixins Helpers</h3>
+
                         <p><b>Migrating from px into rem units:</b></p>
-                        <p>When we speak about pixels (unit) we should know is not equal to a physical pixel in the display.
+
+                        <p>When we speak about pixels (unit) we should know is not equal to a physical pixel in the
+                            display.
                             It's just a unit and will vary depending the font in use.</p>
+
                         <p>That said, some devices can interpret "px" units different (for example Android).</p>
+
                         <p>To overcome this issue we should use relative measures.</p>
-                        <p>"em" is one unit very used on margins and paddings but for <code>font-size</code> is not that good
+
+                        <p>"em" is one unit very used on margins and paddings but for <code>font-size</code> is not that
+                            good
                             since its size depends on its immediate parent.</p>
+
                         <p>For font practices the best unit is "rem" with is the same but relative to the root.</p>
-                        <p>We can handle <code>1rem</code> as <code>10px</code> if we bind font-size: 62.5%</code> into the
+
+                        <p>We can handle <code>1rem</code> as <code>10px</code> if we bind font-size: 62.5%</code> into
+                            the
                             "body" (which is the page's root).</p>
+
                         <p>
                             <a href="http://codepen.io/Kunai-01/pen/bVqWeG?editors=110" target="_blank">
                                 <code>pixel-rem</code>
-                            </a> mixin helps us to handle the "rem" units and also provide a "px" fallback for older browsers.
+                            </a> mixin helps us to handle the "rem" units and also provide a "px" fallback for older
+                            browsers.
                         </p>
                     </div>
                 </div>
@@ -388,11 +471,16 @@
                         <h2 class="secondary__title text-center">Massive coding with @each and @for</h2>
                         <hr class="border__red">
                         <h3 class="third__title">@each:</h3>
-                        <p>Just like in different program languages, Sass give us tools to iterate arrays and objects to get
+
+                        <p>Just like in different program languages, Sass give us tools to iterate arrays and objects to
+                            get
                             values, allowing us to create a wide range of helpers with a few lines of code.</p>
+
                         <p>As I've created manually classes for button-like elements or adding transitions, using
-                            <code>@each</code> and the previous color mapping I've also created a huge list of color helpers
+                            <code>@each</code> and the previous color mapping I've also created a huge list of color
+                            helpers
                             minding texts, backgrounds and borders.</p>
+
                         <p>
                             <a href="http://codepen.io/Kunai-01/pen/rOymZJ?editors=110" target="_blank">
                                 Ton of color helpers
@@ -408,15 +496,23 @@
                         <h2 class="secondary__title text-center">Massive coding with @each and @for</h2>
                         <hr class="border__red">
                         <h3 class="third__title">@for</h3>
+
                         <p>We've seen <code>@each</code> iterates countless items.</p>
-                        <p>But if we want to create a limited loop and also access to the index, <code>@for</code> might be
+
+                        <p>But if we want to create a limited loop and also access to the index, <code>@for</code> might
+                            be
                             a better choice.
                         </p>
-                        <p>For the next example I've decided to reformat completely the Bootstrap's 3 grid in ten (10) lines
+
+                        <p>For the next example I've decided to reformat completely the Bootstrap's 3 grid in ten (10)
+                            lines
                             of code only.</p>
-                        <p>Thanks to the new code, all columns in our project will keep the same height as happen with table
+
+                        <p>Thanks to the new code, all columns in our project will keep the same height as happen with
+                            table
                             cells.
                         </p>
+
                         <p>
                             <a href="http://codepen.io/Kunai-01/pen/zvZwMa?editors=110" target="_blank">
                                 Reformatting bootstrap's grid
@@ -439,6 +535,7 @@
                             Since eons the humanity has tried to overcome one of the most known issues in CSS, the
                             vertical alignment.
                         </h3>
+
                         <p>There are many practices we are going to check together:</p>
                         <ul>
                             <li>
@@ -482,6 +579,7 @@
                         <h3 class="third__title">
                             No. There is another technique I consider is the most profitable among the others:
                         </h3>
+
                         <p>
                             <a href="http://codepen.io/Kunai-01/pen/WQjNzX?editors=110" target="_blank">
                                 Vertical alignment with table display
@@ -511,16 +609,26 @@
                         <h2 class="secondary__title text-center">Images as &lt;img&gt; or background?</h2>
                         <hr class="border__blue">
                         <h3 class="third__title">Let's figure when images should be actual image tags and
-                        when backgrounds.</h3>
+                            when backgrounds.</h3>
+
                         <p>First let's talk about design concepts: figure and background.</p>
+
                         <p>A figure is an image which is like a character in a play. Is content.</p>
-                        <p>In the other hand, background is the scenario, decorates and ambient to strong the message. Is a
+
+                        <p>In the other hand, background is the scenario, decorates and ambient to strong the message.
+                            Is a
                             secondary resource but just a little less important than characters.</p>
-                        <p>Now that we understand this, we should recognize in design what images are intended to be actual
+
+                        <p>Now that we understand this, we should recognize in design what images are intended to be
+                            actual
                             pictures and those that are just decorative assets.</p>
+
                         <p>Pictures (characters) are actual image tags <code>&lt;img&gt;</code>.</p>
-                        <p>Backgrounds and assets (scenario) are... <code>background: ;</code> (so no specific tag is required
+
+                        <p>Backgrounds and assets (scenario) are... <code>background: ;</code> (so no specific tag is
+                            required
                             further from the proper semantic).</p>
+
                         <p>
                             I've made some
                             <a href="http://codepen.io/Kunai-01/pen/zvwYVV?editors=110" target="_blank">
@@ -539,10 +647,15 @@
                         <h2 class="secondary__title text-center">Pseudo elements :before and :after</h2>
                         <hr class="border__blue">
                         <h3 class="third__title">Do you know that content can be included with CSS?</h3>
+
                         <p>Well, yes. Content can be included in CSS and it could also be static or dynamic.</p>
-                        <p>While static code is implemented within the CSS (hardcoded), dynamic content is implemented into
+
+                        <p>While static code is implemented within the CSS (hardcoded), dynamic content is implemented
+                            into
                             some HTML attribute and raised from CSS.</p>
+
                         <p>We include content in CSS that should not be indexed by any Search Engine.</p>
+
                         <p>
                             Let's start with
                             <a href="http://codepen.io/Kunai-01/pen/pjPvOM?editors=100" target="_blank">
@@ -551,21 +664,28 @@
                         </p>
 
                         <p>Another tool is setting CSS counters for autoincrementing a value.</p>
+
                         <p>
                             This one is a good practice when designer created an
-                            <a href="http://codepen.io/Kunai-01/pen/OymPvw?editors=110" target="_blank">ordered list</a>                            and numbers whould have different styles from the text (again, the number should not be indexed
+                            <a href="http://codepen.io/Kunai-01/pen/OymPvw?editors=110" target="_blank">ordered list</a>
+                            and numbers whould have different styles from the text (again, the number should not be
+                            indexed
                             as content by Search Engines).
                         </p>
+
                         <p>
-                            Now let me add a little more of complexity: in design (overall in advertisement), someone's brand can be chopped in two different
+                            Now let me add a little more of complexity: in design (overall in advertisement), someone's
+                            brand can be chopped in two different
                             messages:
                         </p>
                         <ul>
                             <li>Logotypes: the brand with a specific typography ("logo" comes from "letter")</li>
-                            <li>Isotypes: are the actual picture, the symbol that helps everyone recognize the brand</li>
+                            <li>Isotypes: are the actual picture, the symbol that helps everyone recognize the brand
+                            </li>
                         </ul>
                         <p>
-                            That said, I want to introduce a different concept of content inclusion. This one was used on Fareness project anytime the
+                            That said, I want to introduce a different concept of content inclusion. This one was used
+                            on Fareness project anytime the
                             page was loading something. Let's animate
                             <a href="http://codepen.io/Kunai-01/pen/avWzBv?editors=110" target="_blank">
                                 our isotype
@@ -580,9 +700,10 @@
                     <div class="vertical-aligned">
                         <h2 class="main__title">Many thanks!</h2>
                         <hr>
-                        <p class="third__title">Any further consult just let me know <i class="fa fa-smile-o"></i> </p>
+                        <p class="third__title">Any further consult just let me know <i class="fa fa-smile-o"></i></p>
                         <a href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#100;&#105;&#101;&#103;&#111;&#64;&#107;&#117;&#110;&#97;&#105;&#99;&#111;&#110;&#115;&#117;&#108;&#116;&#105;&#110;&#103;&#46;&#99;&#111;&#109;'
-                        class="avatar" title="&#100;&#105;&#101;&#103;&#111;&#64;&#107;&#117;&#110;&#97;&#105;&#99;&#111;&#110;&#115;&#117;&#108;&#116;&#105;&#110;&#103;&#46;&#99;&#111;&#109;"></a>
+                           class="avatar"
+                           title="&#100;&#105;&#101;&#103;&#111;&#64;&#107;&#117;&#110;&#97;&#105;&#99;&#111;&#110;&#115;&#117;&#108;&#116;&#105;&#110;&#103;&#46;&#99;&#111;&#109;"></a>
                     </div>
                 </div>
             </article>
